@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>16</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1440</x>
+      <y>720</y>
+      <w>384</w>
+      <h>192</h>
+    </coordinates>
+    <panel_attributes>Chessboard
+--
+//- pieces[8][8] : Chesspiece
+- boardSize[2] : unsigned int
+- boardTexture : sf::Texture
+- body : sf::RectangleShape
+- uvRect : sf::IntRect
+--
+//update() : void
++ draw(sf::RenderWindow&amp;) : void
+
+//movePiece(int, int, int, int) : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>848</x>
+      <y>720</y>
+      <w>448</w>
+      <h>432</h>
+    </coordinates>
+    <panel_attributes>/Chesspiece : abstract/
+--
+- position[2] : unsigned int
+- kills : int
++ team : Team
+- pieceTexture : sf::Texture
+- body : sf::RectangleShape
+- uvRect : sf::IntRect
+--
+- incrementKill() : void
++ getPosition() : unsigned int*
++ getKills() : int
++ getTeam() : enum
++ move(int, int) : bool
++ moveIsLegal() : bool
+//+ removePiece() : void
++ draw(sf::RenderWindow&amp;, int, int) : void
++ update() : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>320</x>
+      <y>1392</y>
+      <w>240</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>King
+--
+- moveLegality() : bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>576</x>
+      <y>1392</y>
+      <w>240</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>Queen
+--
+- moveLegality() : bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>832</x>
+      <y>1392</y>
+      <w>240</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>Pawn
+--
+- moveLegality() : bool
+- convert() : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1088</x>
+      <y>1392</y>
+      <w>240</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>Knight
+--
+- moveLegality() : bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1344</x>
+      <y>1392</y>
+      <w>240</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>Bishop
+--
+- moveLegality() : bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1600</x>
+      <y>1392</y>
+      <w>240</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>Rook
+--
+- moveLegality() : bool
+- castle() : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1072</x>
+      <y>1136</y>
+      <w>160</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0;80.0;110.0;80.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1104</x>
+      <y>1136</y>
+      <w>384</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0;220.0;90.0;220.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1136</x>
+      <y>1136</y>
+      <w>608</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0;360.0;70.0;360.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>928</x>
+      <y>1136</y>
+      <w>160</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>80.0;10.0;80.0;110.0;10.0;110.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>672</x>
+      <y>1136</y>
+      <w>384</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>220.0;10.0;220.0;90.0;10.0;90.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>416</x>
+      <y>1136</y>
+      <w>608</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>360.0;10.0;360.0;70.0;10.0;70.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1120</x>
+      <y>272</y>
+      <w>464</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>Game
+--
+sizeX : int
+sizeY : int
+- pieces[8][8] : Chesspiece*
+- board : Chessboard*
+--
+- newBoard() : void
+- startGame() : void
++ movePiece(int, int, int, in) : void
++ update(sf::RenderWindow&amp; window) : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1040</x>
+      <y>544</y>
+      <w>336</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=2..*</panel_attributes>
+    <additional_attributes>190.0;10.0;190.0;60.0;10.0;60.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1376</x>
+      <y>544</y>
+      <w>288</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0;160.0;60.0;160.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1280</x>
+      <y>800</y>
+      <w>192</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..*
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
+  </element>
+</diagram>
