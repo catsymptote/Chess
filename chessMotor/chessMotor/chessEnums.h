@@ -17,3 +17,9 @@ enum pieceType
 	bishop,
 	knight
 };
+
+enum pieceTeam
+{
+	white,
+	black
+};
