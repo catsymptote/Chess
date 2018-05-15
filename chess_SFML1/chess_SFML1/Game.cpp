@@ -30,7 +30,7 @@ void Game::movePiece(int x1, int y1, int x2, int y2)
 {
 	// Move piece at x1,y1 to x2,y2
 	// pieces[x1][x2]->move(x2, y2);
-	if (!pieces[x1][x2]->move(x2, y2))
+	if (!pieces[x1][y1]->move(x2, y2))
 		printf("Illegal move or something.");
 }
 
