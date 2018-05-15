@@ -144,6 +144,7 @@
     <ClInclude Include="CGame.h" />
     <ClInclude Include="CMove.h" />
     <ClInclude Include="CPiece.h" />
+    <ClInclude Include="chessEnums.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
