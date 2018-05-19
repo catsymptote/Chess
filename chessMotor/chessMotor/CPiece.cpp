@@ -4,9 +4,7 @@
 
 CPiece::CPiece()
 {
+
 }
 
-
-CPiece::~CPiece()
-{
-}
+CPiece::~CPiece() {}

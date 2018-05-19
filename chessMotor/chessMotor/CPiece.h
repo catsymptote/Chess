@@ -23,4 +23,3 @@ private:
 	std::vector<pieceType>	takenPieces;
 
 };
-

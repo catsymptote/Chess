@@ -4,9 +4,7 @@
 
 CEngine::CEngine()
 {
+
 }
 
-
-CEngine::~CEngine()
-{
-}
+CEngine::~CEngine() {}

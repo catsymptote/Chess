@@ -4,9 +4,7 @@
 
 CGame::CGame()
 {
+
 }
 
-
-CGame::~CGame()
-{
-}
+CGame::~CGame() {}

@@ -4,9 +4,7 @@
 
 CBoard::CBoard()
 {
+
 }
 
-
-CBoard::~CBoard()
-{
-}
+CBoard::~CBoard() {}

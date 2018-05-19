@@ -5,4 +5,3 @@ public:
 	CEngine();
 	~CEngine();
 };
-

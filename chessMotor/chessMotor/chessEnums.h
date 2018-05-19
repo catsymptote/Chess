@@ -8,6 +8,7 @@ enum gameState
 	mate
 };
 
+
 enum pieceType
 {
 	king,
@@ -17,6 +18,7 @@ enum pieceType
 	bishop,
 	knight
 };
+
 
 enum pieceTeam
 {

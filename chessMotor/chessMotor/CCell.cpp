@@ -4,9 +4,7 @@
 
 CCell::CCell()
 {
+
 }
 
-
-CCell::~CCell()
-{
-}
+CCell::~CCell() {}
